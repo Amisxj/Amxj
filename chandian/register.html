@@ -1,0 +1,112 @@
+<!--登陆页面-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户注册</title>
+  <link rel="shortcut icon" href="fonts/favicon.ico" />
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="father">
+    <div class="mid">
+
+      <form action="register.php" method="post" name="myForm"  onsubmit="return validateForm()">
+        <div class="enter">
+          <div class="choose">
+            <div>
+              <p class="user">用户注册</p>
+            </div>
+          </div>
+          <div class="rooter">
+            <div class="account">
+              <img src="./images/register-image/account.png"><input name="account" placeholder="请输入注册账号">
+            </div>
+            <div class="psd">
+              <img src="./images/register-image/password.png"><input name="password" id="password" type="password" placeholder="请输入注册密码">
+            </div>
+            <div class="psd">
+              <img src="./images/register-image/password.png"><input name="password1" id="password1" type="password" placeholder="请输入再次输入密码">
+            </div>
+            <div class="psd number">
+              <input name="number" id="number" placeholder="请输入验证码">
+              <div id="code" style="background-image: url('./images/register-image/verify.png') ;margin-left:10px;height:40px;width: 70px;border-radius: 8px;line-height:53px;text-align: center"></div>
+              <p style="margin-left: 10px" onclick="change()">点击换一张？</p>
+<!--              <img id="code" src="./images/register-image/password.png" alt=""><a>看不清？换一张</a>-->
+            </div>
+            <button>立即注册</button>
+            <span><a href="./login.html"> < 返回登录 </a></span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./js/register.js"></script>
+  <script>
+    function change() {
+      generateCaptcha();
+    }
+    //生成随机验证码
+    let canvas = document.createElement('canvas');
+    canvas.width = 70;
+    canvas.height = 30;
+    let one =0;
+    // 获取2D渲染上下文
+    const ctx = canvas.getContext('2d');
+    // 清除canvas
+    function clearCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+    // 生成随机数
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    // 生成验证码图像
+    function generateCaptcha() {
+      clearCanvas();
+      // 设置字体大小和字体类型
+      ctx.font = '20px Arial';
+
+      // 生成一组随机数作为验证码
+      one =Math.floor(Math.random()*10000);
+      // 将验证码绘制到canvas上
+      ctx.fillText(one, 10, 25);
+
+      // 将canvas显示在页面上
+      const img =document.getElementById("code");
+      img.appendChild(canvas);
+    }
+    generateCaptcha();
+    //验证账户密码功能
+    function validateForm()
+    {
+      const account = document.forms["myForm"]["account"].value;
+      const password = document.forms["myForm"]["password"].value;
+      const password1 = document.forms["myForm"]["password1"].value;
+      const number = document.forms["myForm"]["number"].value;
+      if (account==null || account=="")
+      {
+        alert("账户必须填写");
+        return false;
+      }else  if ((password==null || password=="")&&(password1==null || password1=="")) {
+        alert("密码必须填写");
+        return false;
+      }else if ((password != password1)){
+        alert("请入相同的密码")
+        return false;
+      }else if (one != number){
+        alert('验证码错误')
+        generateCaptcha();
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>

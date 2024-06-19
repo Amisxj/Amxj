@@ -1,0 +1,80 @@
+<!--登陆页面-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录</title>
+    <link rel="shortcut icon" href="fonts/favicon.ico" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="father">
+        <div></div>
+        <div class="top">
+            <div class="top_back">
+                <img src="./fonts/fanghui.png"><span>返回</span>
+            </div>
+            <div><img src="images/login-image/logo.png">馋点,欢迎您！</div>
+        </div>
+        <div class="mid">
+
+            <div class="img">
+                <img src="images/login-image/cartoon.png">
+                <span class="img_text">
+                    <span>生活——</span><span>就该馋点</span>
+                </span>
+            </div>
+            <form action="login.php" method="post" id="enterForm">
+            <div class="enter">
+                <div class="choose">
+                    <div class="active" data-choose="1">
+                        <p class="user">用户登录</p>
+                    </div>
+                    <div class="" data-choose="2">
+                        <p class="rooter">管理员登录</p>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <div class="account">
+                        <img src="./images/login-image/account.png"><input name="username" placeholder="账号名/邮箱/手机号" >
+                    </div>
+                    <div class="psd">
+                        <img src="images/login-image/password.png"><input name="password" type="password" placeholder="请输入登录密码">
+                    </div>
+                    <button>登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+
+                    <div class="else">
+                        <img src="./images/login-image/QQ.png">
+                        <div>QQ登录</div>
+                        <img src="./images/login-image/weixin.png">
+                        <div>微信登录</div>
+                    </div>
+                    <div class="other">
+                        <a href="">忘记密码</a>
+                        <a href="">忘记账号名</a>
+                        <a href="register.html">免费注册</a>
+                    </div>
+                </div>
+
+                <div class="rooter" style="display: none;">
+                        <div class="account">
+                            <img src="images/login-image/rooter_key.png"><input name="admin" placeholder="请输入管理员账号" >
+                        </div>
+                        <div class="psd">
+                            <img src="images/login-image/password.png"><input name="password1" type="password" placeholder="请输入登录密码" >
+                        </div>
+                        <button type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>

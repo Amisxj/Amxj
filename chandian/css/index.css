@@ -1,0 +1,478 @@
+body {
+    background-color: #e6e6e6;
+}
+
+body>.nav {
+    width: 1200px;
+    height: 508px;
+    box-shadow: rgb(190, 190, 190) 0px 0px 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.denglu_success a {
+    cursor: pointer;
+}
+
+.main {
+    width: 960px;
+    height: 453px;
+    margin-left: 239px;
+    margin-top: 47px;
+    position: relative;
+    z-index: -1;
+}
+
+.main .focus ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .focus .title img {
+    height: 45px;
+    margin: 0 5px;
+}
+
+.focus {
+    float: left;
+    width: 720px;
+    height: 455px;
+    /* background-color: pink; */
+    position: absolute;
+    top: -508px;
+    left: 0px;
+}
+
+.focus .focus_header {
+    width: 720px;
+    height: 455px;
+
+
+}
+
+.focus .focus_header .title {
+    width: 720px;
+    height: 45px;
+    background-color: white;
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    border: 1px rgb(203, 202, 202) solid
+}
+
+.main .focus .focus_tupian .small {
+    width: 721px;
+    height: 186px;
+    background-color: pink;
+}
+
+.main .focus .focus_tupian .small li {
+    float: left;
+    width: 360px;
+    height: 190px;
+    background-color: #fff;
+    border: 5px solid #00BFFF;
+}
+
+.main .focus .focus_tupian .big {
+
+    width: 720px;
+    height: 418px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.focus_tupian .big .nav-img {
+    display: flex;
+    overflow: hidden;
+    height: 418px;
+    /* transition: all 0.5s; */
+}
+
+/* .focus_tupian .big .nav-img::-webkit-scrollbar {
+    display: none;
+} */
+.main .focus .focus_tupian {
+    margin-top: 0px;
+    position: absolute;
+    top: 43px;
+    left: 1px;
+}
+
+.main .focus .focus_tupian .big .begin {
+    display: none;
+    flex-shrink: 0;
+    width: 720px;
+    height: 418px;
+    /* border: 5px solid #00BFFF; */
+}
+
+.main .focus .focus_tupian .big .nav-img .begin.active {
+    display: block;
+    flex-shrink: 0;
+    width: 720px;
+    height: 418px;
+    /* border: 5px solid #00BFFF; */
+}
+
+.main .focus .focus_tupian .big .begin img {
+    float: right;
+    width: 720px;
+    height: 418px;
+}
+
+.navigation {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translatex(-50%);
+    display: flex;
+}
+
+
+
+.navigation .bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.navigation .bar:hover {
+    background: #fff;
+}
+
+.navigation .active {
+    background: #fff;
+}
+
+.main .focus .focus_tupian .big .nav-prev {
+    width: 50px;
+    height: 55px;
+    line-height: 55px;
+    position: absolute;
+    left: 0px;
+    top: 193px;
+    background-color: rgba(255, 255, 255, 0.433);
+    cursor: pointer;
+    display: none;
+}
+
+.main .focus .focus_tupian .big .nav-prev img {
+    width: 50px;
+}
+
+.main .focus .focus_tupian .big .nav-current {
+    width: 50px;
+    height: 55px;
+    line-height: 55px;
+    position: absolute;
+    right: 0px;
+    top: 193px;
+    background-color: rgba(255, 255, 255, 0.433);
+    cursor: pointer;
+    display: none;
+}
+
+.main .focus .focus_tupian .big .nav-current img {
+    width: 50px;
+}
+
+/* input[name="r"]{
+    position: absolute;
+}
+#r1:checked ~ .s1 {
+    margin-bottom: 0;
+}
+#r1:checked ~ .s1 {
+    margin-bottom: -20%;
+}
+#r1:checked ~ .s1 {
+    margin-left: -40%;
+} */
+#r1:checked~.s1 {
+    margin-left: -60%;
+}
+
+#r1:checked~.s1 {
+    margin-left: -80%;
+}
+
+.newsflash {
+    float: right;
+    width: 240px;
+    height: 455px;
+    /* background-color: white; */
+    /* border: 1px solid gainsboro; */
+    margin-top: -511px;
+}
+
+.newsflash .header {
+    width: 240px;
+    height: 45px;
+    background-color: white;
+}
+
+.hearder .body {
+    width: 240px;
+}
+
+.newsflash .header ul {
+    width: 240px;
+    text-align: center;
+    line-height: 45px;
+    background-color: pink;
+    margin-left: 1px;
+    margin-top: -1px;
+}
+
+.newsflash .body ul {
+    width: 241px;
+    height: 50px;
+
+}
+
+.newsflash .body ul li {
+    background-color: skyblue;
+    height: 60px;
+    /* margin-top: 8px; */
+    padding-left: 20px;
+    line-height: 44.8px;
+    font-size: 20px;
+
+    /* border-bottom: 1px solid gainsboro;
+    border-bottom-style: dashed; */
+}
+
+.newsflash .body ul li:nth-child(7) {
+    border-bottom-right-radius: 20px;
+}
+
+.newsflash .body ul li h3 {
+    float: left;
+}
+
+.newsflash .body ul li p {
+    font-size: 10px;
+}
+
+.bottom {
+    /* background-color: rgb(235, 235, 235); */
+    margin-top: 40px;
+    ;
+}
+
+.bottom_image {
+    height: 45px;
+    width: 445px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.bottom_image>img {
+    width: 45px;
+    height: 45px;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.bottom_image>div {
+    width: 200px;
+    height: 200px;
+    border: 0px;
+    overflow: hidden;
+}
+
+.bottom_image>div>img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 0px;
+}
+
+.bottom_image>.qq {
+    /* background-color: red; */
+    position: absolute;
+    top: -241px;
+    left: -30px;
+
+}
+
+.bottom_image>.qq>.qq_contact {
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.qq_img:hover+.qq>img {
+    transform: translateY(-0px);
+    opacity: 1;
+}
+
+.bottom_image>.weixin {
+    /* background-color: blue; */
+    position: absolute;
+    top: -241px;
+    left: 120px;
+}
+
+.bottom_image>.weixin>.weixin_contact {
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.weixin_img:hover+.weixin>img {
+    transform: translateY(-0px);
+    opacity: 1;
+}
+
+.bottom_image>.weibo {
+    /* background-color: green; */
+    position: absolute;
+    top: -241px;
+    left: 269px;
+}
+
+.bottom_image>.weibo>.weibo_contact {
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.weibo_img:hover+.weibo>img {
+    transform: translateY(-0px);
+    opacity: 1;
+}
+
+.bottom_text {
+    width: 500px;
+    height: 50px;
+    margin: 10px auto 0px;
+    border-top: 4px solid rgb(195, 195, 195);
+    text-align: center;
+    font-size: 15px;
+}
+
+.header .hotwords_rank {
+    width: 454px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 350px;
+    z-index: 99;
+}
+
+.header .hotwords_rank .tr {
+    width: 454px;
+    height: 25px;
+    display: flex;
+}
+
+.header .hotwords_rank .tr:hover {
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+
+}
+
+.hotwords_rank .tr img {
+    width: 25px;
+}
+
+.hotwords_rank .tr .rank_name {
+    font-size: 15px;
+    line-height: 25px;
+    padding-left: 8px;
+}
+
+.navitems ul li:hover {
+    background-color: skyblue;
+}
+
+.footer {
+    width: 1200px;
+    height: 600px;
+    /* background-color: skyblue; */
+    margin: 0 auto;
+    margin-top: -400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 0px 20px 10px;
+    box-shadow: rgb(190, 190, 190) 0px 0px 20px;
+}
+
+.footer>div>h1 {
+    margin-left: 27px;
+    margin-bottom: 25px;
+}
+
+.footer .content>div {
+    margin-left: 28px;
+    margin-bottom: 90px;
+    width: 260px;
+    height: 200px;
+    /* float: left; */
+    transition: all 0.3s;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.footer .content>div .img {
+    width: 260px;
+    height: 150px;
+    background-color: pink;
+    border-radius: 20px;
+
+}
+.footer .content>div .img>img{
+    width: 260px;
+    height: 150px;
+    object-fit: cover;
+}
+.footer .content_1 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.footer .content_2 {
+    width: 260px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-bottom: 28px;
+    background-color: rgb(240, 240, 240);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.footer .content_2>span {
+    color: #ff7c2d;
+}
+
+.footer .content>div:hover {
+    transform: translateY(-17px);
+    /* transition: all 0.5s; */
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+
+.footer .content>div div,
+.content>div img {
+    transition: all 0.3s;
+}
+
+.footer div {
+    display: flex;
+    flex-wrap: wrap;
+}

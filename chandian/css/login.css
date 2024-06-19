@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.woff2?t=1668319323368') format('woff2'),
+        url('../fonts/iconfont.woff?t=1668319323368') format('woff'),
+        url('../fonts/iconfont.ttf?t=1668319323368') format('truetype');
+}
+
+.father {
+    width: 1200px;
+    height: 700px;
+    background-image: url('../images/login-image/login-bgc.png');
+    margin: 2% auto 0 auto;
+    padding-top: 30px;
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: grey 0px 0px 20px;
+}
+
+.father .top {
+    width: 1000px;
+    height: 80px;
+    line-height: 80px;
+    background-color: pink;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.father .top .top_back {
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    /* background-color: red; */
+    position: relative;
+    top: 10px;
+    left: 9px;
+}
+
+.father .top .top_back:hover {
+    background-color: white;
+    border-radius: 100px;
+
+}
+
+.top .top_back img {
+    height: 40px;
+    margin-left: 10px;
+    margin-top: -7px;
+}
+
+.top .top_back span {
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.top div {
+    position: absolute;
+    top: 58px;
+    left: 561px;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.father .mid {
+    width: 100%;
+    height: 500px;
+    /* background-color: rgba(221, 223, 222, 0.611); */
+    position: relative;
+}
+
+.mid .img {
+    position: absolute;
+    top: 100px;
+    left: 131px;
+    /* background-color: rgb(251, 174, 174); */
+}
+
+.mid .img img {
+    width: 300px;
+    transform: rotateY(180deg);
+}
+
+.mid .img span span {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.mid .img .img_text {
+    position: relative;
+}
+
+.mid .img_text span:nth-child(2) {
+    display: block;
+    height: 180px;
+    position: absolute;
+    top: -43px;
+    left: 45px;
+}
+
+.mid .enter {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    top: 50px;
+    right: 83px;
+    border: 2px rgb(211, 211, 211) solid;
+    font-size: 16px;
+    padding: 20px 40px;
+}
+
+.enter .choose {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    /* background-color: rgb(255, 149, 149); */
+}
+
+.enter .choose .active {
+    border-bottom: 2px black solid;
+    cursor: pointer;
+}
+
+.enter .account {
+    margin-top: 10px;
+}
+
+.enter .account img {
+    width: 50px;
+    background-color: rgb(189, 189, 189);
+}
+
+.enter .psd img {
+    width: 50px;
+    background-color: rgb(189, 189, 189);
+}
+
+.enter input {
+    height: 50px;
+    width: 266px;
+    padding: 0px 10px;
+}
+
+.enter .account,
+.psd {
+    margin-bottom: 30px;
+}
+
+.enter button {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: pink;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.enter input::placeholder {
+    font-size: 19px;
+}
+
+.enter .else {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.enter .else img {
+    width: 20px;
+}
+
+.enter .else img,
+div:hover {
+    cursor: pointer;
+}
+
+.enter .other {
+    position: absolute;
+    right: 40px;
+    font-size: 15px;
+}

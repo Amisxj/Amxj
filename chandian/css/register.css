@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.woff2?t=1668319323368') format('woff2'),
+    url('../fonts/iconfont.woff?t=1668319323368') format('woff'),
+    url('../fonts/iconfont.ttf?t=1668319323368') format('truetype');
+}
+
+.father {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/register-image/bgc.png') ;
+  background-size: 100%;
+  margin: -10px 0 auto auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+.top {
+  height: 20%;
+}
+.top img{
+  height:100%;
+  object-fit: cover;
+}
+.top span{
+  font-size: 25px;
+  font-weight: 700;
+  color:white;
+}
+.father .mid {
+  width: 100%;
+  height: 500px;
+  /* background-color: rgba(221, 223, 222, 0.611); */
+  position: relative;
+}
+
+
+.mid .enter {
+  width: 400px;
+  height: 417px;
+  background-color: rgba(240, 240, 240, 0.527);
+  margin: 0 auto;
+  transform: translateY(-50%);
+  transform: translateY(50%);
+  border: 2px rgb(211, 211, 211) solid;
+  font-size: 16px;
+  padding: 10px 40px;
+}
+
+.enter .choose {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+  /* background-color: rgb(255, 149, 149); */
+}
+
+
+.enter .account {
+  /* margin-top: 10px; */
+}
+
+.enter .account img {
+  width: 40px;
+  background-color: rgb(189, 189, 189);
+}
+
+.enter .psd img {
+  width: 40px;
+  background-color: rgb(189, 189, 189);
+}
+
+.enter input {
+  height: 40px;
+  width: 276px;
+  padding: 0px 10px;
+  position: relative;
+  top:2px;
+}
+
+.enter .number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.enter .number img {
+  height: 38px;
+  width: 80px;
+  object-fit: cover;
+}
+
+.enter .number input {
+  height: 40px;
+  width: 111px;
+  padding: 0px 10px;
+}
+
+.enter .number a {
+  display: block;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 10px;
+  margin-bottom: -10px;
+}
+
+.enter .account,
+.psd {
+  margin-bottom: 20px;
+}
+
+.enter button {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #c7ffae;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.enter button:hover {
+  background-color: rgb(137, 252, 139);
+  border:1px solid black;
+}
+.enter .rooter span{
+  display: block;
+  margin-top: 10px;
+}
+.enter input::placeholder {
+  font-size: 15px;
+}
+
+.enter .else {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.enter .else img {
+  width: 20px;
+}
+
+.enter .else img,
+div:hover {
+  cursor: pointer;
+}
+
+.enter .other {
+  position: absolute;
+  right: 40px;
+  font-size: 15px;
+}

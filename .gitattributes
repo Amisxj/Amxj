@@ -1,0 +1,2 @@
+*.php filter=lfs diff=lfs merge=lfs -text
+*chandian filter=lfs diff=lfs merge=lfs -text
