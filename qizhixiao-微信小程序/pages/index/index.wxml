@@ -1,0 +1,44 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="userinfo" style="width:100vw;height:30vh;background: #ffe76a;">
+    <i-modal visible title="操作提示">是否确认删除？</i-modal> 
+  </view>
+</view>
+
+
+<!-- <i-button size="large" type="primary">测试按钮</i-button>
+    <i-button size="small" type="info">测试按钮</i-button>
+    <i-button size="small" type="success" disabled>测试按钮</i-button>
+    <i-button size="small" type="warning">测试按钮</i-button>
+    <i-button size="small" loading type="warning" shape="circle">测试按钮</i-button> 
+    -->
+<!-- 
+    <i-grid>
+      <i-grid-item>
+        <i-grid-icon>
+          <image src="../../resource/static/images/home.png" />
+        </i-grid-icon>
+        <i-grid-label>
+          课程表
+        </i-grid-label>
+      </i-grid-item>
+
+      <i-grid-item>
+        <i-grid-icon>
+          <image src="../../resource/static/images/home.png" />
+        </i-grid-icon>
+        <i-grid-label>
+          课程表
+        </i-grid-label>
+      </i-grid-item>
+
+      <i-grid-item>
+        <i-grid-icon>
+          <image src="../../resource/static/images/home.png" />
+        </i-grid-icon>
+        <i-grid-label>
+          课程表
+        </i-grid-label>
+      </i-grid-item>
+    </i-grid> -->
+

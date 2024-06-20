@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/playground/index",
+    "pages/join/index",
+    "pages/forget/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/self/index",
+    "pages/school/index",
+    "pages/notic/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/playground/index",
+      "text": "操场",
+      "iconPath": "resource/static/images/home.png",
+      "selectedIconPath": "resource/static/images/home.png"
+    },
+    {
+      "pagePath": "pages/school/index",
+      "text": "校园",
+      "iconPath": "resource/static/images/home.png",
+      "selectedIconPath": "resource/static/images/home.png"
+    },
+    {
+      "pagePath": "pages/notic/index",
+      "text": "留言板",
+      "iconPath": "resource/static/images/home.png",
+      "selectedIconPath": "resource/static/images/home.png"
+    },
+    {
+      "pagePath": "pages/self/index",
+      "text": "个人中心",
+      "iconPath": "resource/static/images/home.png",
+      "selectedIconPath": "resource/static/images/home.png"
+    }
+  ],
+  "color": "#515151",
+  "selectedColor": "#3eb9b0",
+  "backgroungColor": "#f7f7f7",
+  "borderStyle": "white"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

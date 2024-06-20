@@ -1,0 +1,10 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "留言板",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "disableScroll": false
+}

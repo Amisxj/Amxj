@@ -1,0 +1,124 @@
+/* pages/login/index.wxss */
+.container {
+  background: #69C3AA;
+  height: 100vh;
+}
+
+.content{
+  z-index: 10;
+  width:  100%;
+  height: 100%;
+  opacity: 0;
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(244,244,244,0)),color-stop(0.1,#f4f4f4f4),to(#f4f4f4f8));
+  animation: rise 3s cubic-bezier(0.19,1,0.22,1) .25s forwards;
+}
+
+.content-wave{
+  position: absolute;
+  top:0;
+  left: 50%;
+  width: 1000rpx;
+  margin-left: -500rpx;
+  height: 200rpx;
+  transition: all .35s ease;
+}
+
+.logo{
+  position: absolute;
+  z-index: 2;
+  width: 160rpx;
+  height: 160rpx;
+  left:50%;
+  bottom: 200rpx;
+  margin-left: -80rpx;
+  opacity: 0.95;
+  border-radius: 160rpx;
+  animation: sway 10s ease-in-out infinite;
+}
+
+.wave{
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  opacity: 0.725;
+  height: 260rpx;
+  width: 2250rpx;
+  animation: wave 10s linear infinite;
+}
+
+.wave-bg{
+  z-index: 1;
+  animation: wave-bg 10.25s linear infinite;
+}
+/* wave关键帧 */
+@keyframes wave{
+  from{transform: translate3d(125rpx,0,0)}
+  to {transform: translate3d(1125rpx,0,0)}
+}
+@keyframes wave-bg{
+  from{transform: translate3d(375rpx,0,0)}
+  to {transform: translate3d(1375rpx,0,0)}
+}
+/* 上升关键帧 */
+@keyframes rise{
+  0% {opacity: 0;transform: translate3d(0,100%,0)}
+  50% {opacity: 1;}
+  100% {opacity: 1;transform: translate3d(0,450rpx,0);}
+}
+/* 摇晃关键帧 */
+@keyframes sway{
+  0% {transform: translate3d(0,20rpx,0) rotate(15deg);}
+  17% {transform: translate3d(0,0rptx,0) rotate(25deg);}
+  34% {transform: translate3d(0,-20rpx,0) rotate(20deg);}
+  50% {transform: translate3d(0,-10rpx,0) rotate(-15deg);}
+  67% {transform: translate3d(0,10rpx,0) rotate(-25deg);}
+  84% {transform: translate3d(0,15rpx,0) rotate(-15deg);}
+  100% {transform: translate3d(0,20rpx,0) rotate(15deg);}
+}
+
+/* form表单 */
+/* 表单上升动画 */
+@keyframes bd-rise{
+  from {opacity: 0;transform: translate3d(0,60rpx,0);}
+  to {opacity: 1;transform: translate3d(0,0,0);}
+}
+.form-bd{
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  animation: bd-rise 2s cubic-bezier(0.23,1,0.23,1) 0.75s forwards;
+  opacity: 0;
+}
+.input-area{
+  margin-top: 80rpx;
+}
+/*  */
+.option-select{
+  padding: 20rpx 5%;
+  color:#aaa;
+}
+.option-select .join{
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.option-select .forget{
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.confirm-btn{
+  height: 85rpx;
+  background: #69C3AA;
+  font-size: 32rpx;
+  line-height: 85rpx;
+  color: #fff;
+  text-align: center;
+  margin: 15% 20%;
+  border-radius: 10rpx;
+}
+.confirm-btn:active{
+  opacity: 0.8;
+}

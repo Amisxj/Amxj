@@ -1,0 +1,7 @@
+#MySQL 数据库驱动程序
+MySQLDriver=com.mysql.cj.jdbc.Driver
+
+# MySQL数据库连接字符串。
+# 127.0.0.1:3306 为数据库地址和端口
+# newsdb 为数据库名，user 为登录用户名，password 为登录密码。请自行更改。
+MySQLURL=jdbc:mysql://127.0.0.1:3306/webdb?user=root&password=root&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT

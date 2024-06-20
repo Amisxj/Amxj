@@ -1,0 +1,326 @@
+.main {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1400px;
+    width: 100%;
+    overflow: hidden;
+}
+.header {
+    position: relative;
+    height: 54px;
+    z-index: 9999;
+    min-width: 1260px;
+    line-height: 24px;
+    background-color: #fff;
+}
+.header-left {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.header-left>a {
+    position: absolute;
+    display: block;
+    width: 179px;
+    height: 54px;
+    overflow: hidden;
+    background-color: #cf1132;
+    color: #fff!important;
+    font-size: 12px;
+    cursor: default;
+    text-align: center;
+    line-height: 54px;
+}
+.header>img {
+    margin-left: -60px;
+    margin-top: 5px;
+}
+.wrap {
+    width: 100%;
+    height: 4590px;
+    margin: 0;
+    padding: 0;
+    background: url("../images/bg.jpg") no-repeat center 1080px;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background: url("../images/main.jpg") no-repeat center top;
+}
+.logo {
+    width: 340px;
+    height: 189px;
+    position: absolute;
+    z-index: 2;
+    background: url("../images/logo1.png");
+}
+.logo>a {
+    width: 340px;
+    height: 189px;
+    z-index: 1;
+    display: inline-block;
+}
+.extent {
+    position: absolute;
+    top: 0;
+    width: 346px;
+    height: 47px;
+    right: 20px;
+    z-index: 2;
+}
+.extent-left {
+    position: relative;
+    float: left;
+    width: 173px;
+    height: 46px;
+    transition: 2s;
+    background: url("../images/main-left.png");
+    background-size: 100% 100%;
+}
+.extent-left:hover::after{
+    display: block;
+}
+.extent-left::after {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: -182px;
+        width: 415px;
+        height: 169px;
+        background: url("../images/main-left1.png") no-repeat center;
+        background-size: 100% 100%;
+}
+.extent a {
+    position: relative;
+    float: left;
+    width: 173px;
+    height: 46px;
+    z-index: 1;
+    background: url("../images/main-right.png");
+}
+.extent a>img {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -24px;
+}
+.content {
+    position: absolute;
+    top: 0;
+    width: 1440px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contentone {
+    position: absolute;
+    top: 139px;
+    left: -107px;
+    width: 122px;
+    height: 289px;
+    background: url("../images/content1.png");
+}
+.contenttwo {
+    position: absolute;
+    top: 180px;
+    left: 413px;
+    width: 162px;
+    height: 375px;
+    background: url("../images/content2.png");
+}
+.contentthree {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 50px;
+    width: 338px;
+    height: 325px;
+    transform: translateX(-50%);
+    background: url("../images/content3.png");
+}
+.contentfour {
+    position: absolute;
+    top: 112px;
+    right: 29px;
+    width: 321px;
+    height: 761px;
+    background: url("../images/content4.png");
+}
+.partone {
+    width: 100%;
+    height: 460px;
+    margin-bottom: 140px;
+    margin-top: 60px;
+}
+.partone-title {
+    width: 521px;
+    height: 100px;
+    background: url("../images/titl.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 23px auto 36px;
+}
+.partone-main {
+    width: 1392px;
+    height: 364px;
+    background: url("../images/partone-main.png") 0 0 no-repeat;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px 20px;
+    box-sizing: border-box;
+}
+.oneleft {
+    position: relative;
+    width: 378px;
+    height: 265px;
+}
+.onetitle {
+    width: 301px;
+    height: 27px;
+    margin: 30px auto 14px 16px;
+    background: url("../images/onetitle.png");
+}
+.one-leftcenter {
+    float: left;
+    width: 354px;
+    height: 110px;
+    margin: 18px auto -7px;
+}
+.one-leftbottom {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    width: 305px;
+    height: 65px;
+    margin: 23px auto auto;
+    background: url("../images/oneleft4.png");
+}
+.oneright {
+    position: relative;
+    width: 941px;
+    height: 278px;
+    margin-top: 30px;
+}
+.one-righttop {
+    width: 915px;
+    height: 123px;
+    position: absolute;
+    top: -5px;
+    left: 8px;
+    display: flex;
+}
+.item {
+    width: 282px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding: 8px 14px;
+    background: url("../images/item.png") ;
+}
+.p1 {
+    text-align: center;
+    font-size: 20px;
+    color: #420a0999;
+
+}
+.p2 {
+    font-size: 16px;
+    color: #a06100;
+    line-height: 20px;
+    text-align: justify;
+}
+.one-rightbottom {
+    width: 915px;
+    height: 123px;
+    position: absolute;
+    top: 130px;
+    left: 8px;
+    display: flex;
+}
+.one-rightbottom>li {
+    float: left;
+    width: 155px;
+    height: 100%;
+    position: relative;
+}
+.one-rightbottom>li a {
+    display: block;
+    margin: 0 auto 15px;
+    position: relative;
+}
+.finish {
+    position: absolute;
+    width: 95px;
+    height: 83px;
+    background: url(../images/item1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    top: 45%;
+    left: 50%;
+    margin: -41.5px 0 0 -47.5px;
+    z-index: 2;
+    pointer-events: none;
+}
+.reachable {
+    margin-left: 10px;
+}
+.reachable span.item1 {
+    background: url(../images/item2.png) 0 0 no-repeat;
+    width: 86px;
+    height: 84px;
+    background-size: 100% 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+p.name {
+    color: #603b2a;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -11px;
+    font-weight: 700;
+}
+.one-rightbottom  li .nunber-people {
+    box-sizing: border-box;
+    margin-top: 6px;
+    width: 158px;
+    height: 28px;
+    background: url("../images/num.png") 0 0 no-repeat;
+    padding-left: 25px;
+    padding-top: 4px;
+}
+.one-rightbottom  li .nunber-people em {
+    margin-right: 2px;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url("../images/num-left.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    transform: scale(0.8);
+}
+.one-rightbottom  li .nunber-people span {
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #feedd5;
+}
+.parttwo {
+    width: 1180px;
+    margin: 43px auto 0;
+    position: relative;
+    z-index: 11; 
+}
+.cole {
+    position: relative;
+    margin-bottom: 70px;  
+}
+.parttwo-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 145px;
+    background-repeat: no-repeat;
+    background-image: url("../images/parttwo-title.png");
+}

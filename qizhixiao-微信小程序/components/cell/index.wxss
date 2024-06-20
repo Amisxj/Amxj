@@ -1,0 +1,61 @@
+/* components/cell/index.wxss */
+.i-cell{
+  position:  relative;
+  padding: 24rpx 30rpx;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+.i-cell::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0 ;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e9eaec;
+  border-bottom-width: 2rpx;
+  left: 30rpx;
+  right: 0
+}
+.i-cell-last::after{
+  display: none;
+}
+.i-cell-icon:empty{
+  display: none;
+}
+.i-cell-bd{
+  flex: 1;
+}
+.i-cell-title{
+  line-height: 48rpx;
+  font-size: 28rpx;
+}
+.i-cell-label{
+  line-height: 1.2;
+  font-size: 24rpx;
+  color: #80848f;
+}
+.i-cell-access .i-cell-ft{
+  padding-right: 13px;
+}
+.i-cell-access .i-cell-ft::after{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 37%;
+  right: 16px;
+  border-width: 2px 2px 0 0;
+  border-color:  #dddee1;
+  border-style: solid;
+  transform: translateY(50%) matrix(.71,.71,-.71,.71,0,0);
+}

@@ -1,0 +1,4 @@
+<!--components/col/index.wxml-->
+<view class="i-class i-col {{span ? 'i-col-span-' + span : ''}} {{offset ? 'i-col-offset-' : ''}}">
+  <slot></slot>
+</view>

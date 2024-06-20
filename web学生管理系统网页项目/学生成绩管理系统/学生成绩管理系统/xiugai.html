@@ -1,0 +1,72 @@
+<!--修改界面-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>修改信息</title>
+    <style type="text/css">
+        table,th,td{border:1px solid black;}
+        table{border-collapse:collapse;
+            width:500px;}
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);}
+        }
+    </style>
+</head>
+<body background="teacher.jpg">
+<h1>修改学生</h1>
+<form action="xiugai.php" method="post">
+    <table>
+        <tr>
+            <td>学号：</td>
+            <td><input type="text" name="xuehao" /></td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" name="xingming" /></td>
+        </tr>
+        <tr>
+            <td>班级：</td>
+            <td><input type="text" name="banji" /></td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="text" name="xingbie" /></td>
+        </tr>
+        <tr>
+            <td>专业：</td>
+            <td><input type="text" name="zhuanye" /></td>
+        </tr>
+        <tr>
+            <td>出生日期：</td>
+            <td><input type="text" name="shengri" /></td>
+        </tr>
+        <tr>
+            <td>身份证：</td>
+            <td><input type="text" name="shenfen" /></td>
+        </tr>
+        <tr>
+            <td>电话：</td>
+            <td><input type="number" name="dianhua" /></td>
+        </tr>
+        <tr>
+            <td>住址：</td>
+            <td><input type="text" name="zhuzhi" /></td>
+        </tr>
+        <tr>
+            <td>学分：</td>
+            <td><input type="text" name="xufen" /></td>
+        </tr>
+    </table>
+   < <button type="submit">修改</button>
+    <input type="button" value="返回" onclick="window.location.href='Gstudent.php'">
+</form>
+</body>
+</html>

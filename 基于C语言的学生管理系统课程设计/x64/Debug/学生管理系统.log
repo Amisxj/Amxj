@@ -1,0 +1,3 @@
+﻿  xuesheng.cpp
+E:\C语言\玩的\学生管理系统\xuesheng.cpp(187,14): error C2440: “=”: 无法从“int”转换为“int *”
+E:\C语言\玩的\学生管理系统\xuesheng.cpp(187,13): message : 从整型强制转换为指针类型要求 reinterpret_cast、C 样式强制转换或函数样式强制转换

@@ -1,0 +1,43 @@
+<!--登陆页面-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录界面</title>
+	<style type="text/css">
+		table,th,td{border:1px solid black;}
+		table{border-collapse:collapse;
+			width:500px;}
+		div{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);}
+		}
+	</style>
+</head>
+	<body background="denglu.jpg">
+		<div class="div">
+		  <h1>学生选课管理系统</h1>
+			<form action="choose.php" method="post">
+				<form action="student.php" method="post" >
+				<br/>
+				账号：<input type="text" name="username" maxlength="10" placeholder="please input your account"/>
+				<a href="student.php?username=username"></a>
+				<br/>
+				密码：<input type="password" name="password" maxlength="10" placeholder="please input your password"/>
+				<br/>
+				<input type="radio" name="1" value="学生"/>学生
+				<input type="radio" name="2" value="教师"/>教师
+				<br/>
+				<input type="submit" value="登录"/>
+				<input type="reset" value="重置"/>
+				</form>
+			</form>
+		</div>
+	</body>
+</html>

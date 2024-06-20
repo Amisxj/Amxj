@@ -1,0 +1,18 @@
+<!--components/modal/index.wxml-->
+<view class="container">
+  <view class="form-area">
+    <view class="padding margin-top">
+      <i-input title="账号" placeholder="手机号/邮箱" mode="wrapped" type="text" right value="{{account}}" bind:change="changeAccount"></i-input>
+      <i-input title="新密码" placeholder="输入新密码" mode="wrapped" type="password" right value="{{pass}}" bind:change="{{changePass}}"></i-input>
+      <i-input title="确认密码" placeholder="再次输入密码" mode="wrapped" type="password" right
+      value="{{repeatPass}}" bind:change="changeRepeatPass"></i-input>
+    </view>
+   
+    <view>
+      <i-button bind:click="forgetAction" type="primary">验证帐号</i-button>
+    </view>
+    <i-modal visible="{{visiDialog}}" bind:ok="confirmCode" bind:cancel="cancelCode" title="验证码已发送">
+      <i-input value="{{validateCode}}" type="number" right mode="wrapped" bind:change="changeValidateCode"> </i-input>
+    </i-modal>
+  </view>
+</view>

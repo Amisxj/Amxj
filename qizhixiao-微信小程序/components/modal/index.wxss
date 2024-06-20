@@ -1,0 +1,82 @@
+/* components/modal/index.wxss */
+/* 遮罩模糊 */
+.i-modal-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+.i-modal-mask-show{
+  opacity: 1;
+  visibility: visible;
+}
+/* 提示框 */
+.i-modal{
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  outline: 0;
+  -webkit-box-align: center;
+  align-items: center;justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.i-modal-show{
+  visibility: visible;
+  opacity: 1;
+}
+.i-modal-main{
+  width: 540rpx;
+  position: relative; 
+}
+.i-modal-content{
+  border-radius: 14rpx;
+  padding-top: 30rpx;
+  position: relative;
+  background-color: #fff;
+  border: 0;
+  background-clip: padding-box;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+.i-modal-title{
+  padding: 12rpx 30rpx 30rpx;
+  margin: 0;
+  font-size: 36rpx;
+  color: #1c2438;
+}
+.i-modal-body{
+  max-height: 200rpx;
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  color: #80848f;
+  line-height: 1.5;
+  overflow: auto;
+}
+/* 确认取消按钮 */
+.i-modal-actions{
+  margin: 0 2rpx;
+}
+.i-modal-grid{
+  border-radius: 0 0 14rpx 14rpx;
+  border-left: none;
+}
+.i-modal-grid-item,.i-modal-grid-item-last{
+  padding: 0;
+  border-bottom: none;
+}
+.i-modal-grid-item-last{
+  border-right: none;
+}

@@ -1,0 +1,30 @@
+<!--components/input/index.wxml-->
+<view class="i-class i-input i-cell {{mode === 'wrapped' ? 'i-input-wrapped' : ''}}">
+  <view class="i-cell-header i-input-title">{{title}}</view>
+    <textarea 
+      wx:if="{{type === 'textarea'}}"
+      class="i-input-input i-cell-body" 
+      auto-height
+      type="{{type}}" 
+      disabled="{{disabled}}" 
+      focus="{{autofocus}}" 
+      value="{{value}}" 
+      placeholder="{{placeholder}}" 
+      maxlength="{{maxlength}}" 
+      bindinput="handleInputChagne" 
+      bindfocus="handleInputFocus" 
+      bindblur="handleInputBlur">
+    </textarea>
+    <input 
+      wx:else
+      class="i-input-input i-cell-body {{right ? 'i-input-input-right' : ''}}" 
+      type="{{type}}" 
+      disabled="{{disabled}}" 
+      focus="{{autofocus}}" 
+      value="{{value}}" 
+      placeholder="{{placeholder}}" 
+      maxlength="{{maxlength}}" 
+      bindinput="handleInputChagne" 
+      bindfocus="handleInputFocus" 
+      bindblur="handleInputBlur"/> 
+</view>

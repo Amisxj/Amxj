@@ -1,0 +1,18 @@
+{
+  "usingComponents": {
+    "i-cell-group": "../../components/cell-group/index",
+    "i-cell": "../../components/cell/index",
+    "i-row": "../../components/row/index",
+    "i-col": "../../components/col/index",
+    "i-avatar": "../../components/avatar/index",
+    "i-grid": "../../components/grid-image/index",
+    "i-grid-item": "../../components/grid-item-image/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "操场",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "disableScroll": false
+}

@@ -1,0 +1,11 @@
+<!--components/button/index.wxml-->
+<button
+  class="i-class i-btn {{'i-btn-'+type}} {{'i-btn-'+size}} {{'i-btn-'+shape}} {{disabled ? 'i-btn-disabled' : ''}} {{long ? 'i-btn-long' : ''}} {{loading ? 'i-btn-loading' : ''}} {{inline ? 'i-btn-inline' : ''}}"
+  hover-class="i-btn-hover"
+  bindtap="handleTap"
+  hover-start-time="{{hoverStartTime}}"
+  hover-stay-time="{{hoverStayTime}}"
+  plain="true">
+  <view class="i-btn-loading-inner" wx:if="{{loading}}"></view>
+  <slot></slot>
+</button>

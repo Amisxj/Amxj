@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "i-panel": "../../components/panel/index",
+    "i-input": "../../components/input/index",
+    "i-button": "../../components/button/index",
+    "i-modal": "../../components/modal/index",
+    "i-grid": "../../components/grid/index",
+    "i-grid-item": "../../components/grid-item/index",
+    "i-grid-icon": "../../components/grid-icon/index",
+    "i-grid-label": "../../components/grid-label/index"
+  }
+}

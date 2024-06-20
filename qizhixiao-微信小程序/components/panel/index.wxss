@@ -1,0 +1,34 @@
+/* components/panel/index.wxss */
+i-panel{
+  position: relative;
+  overflow: hidden;
+}
+
+.i-panel-title{
+  font-size: 28rpx;
+  line-height: 1;
+  color:#1c2438;
+  padding: 40rpx 32rpx 20rpx;
+}
+
+.i-panel-content{
+  position: relative;
+  background:#fff;
+  overflow: hidden;
+}
+
+.i-panel-content::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e9eaec;
+  border-top-width: 2rpx;
+  border-bottom-width: 2rpx;
+}

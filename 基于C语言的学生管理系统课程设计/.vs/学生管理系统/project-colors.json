@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ebe6004f-0e82-43b8-9734-60c2e1f6542e": {
+      "ProjectGuid": "ebe6004f-0e82-43b8-9734-60c2e1f6542e",
+      "DisplayName": "学生管理系统",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

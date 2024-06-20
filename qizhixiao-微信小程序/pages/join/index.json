@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-input": "../../components/input/index",
+    "i-button": "../../components/button/index",   
+    "i-modal": "../../components/modal/index"
+  },
+  "enablePullDownRefresh": false,
+  "disableScroll": true
+}
